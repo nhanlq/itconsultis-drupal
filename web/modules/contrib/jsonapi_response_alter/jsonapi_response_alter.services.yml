@@ -1,0 +1,8 @@
+services:
+  jsonapi_response_alter.response_subscriber:
+    class: Drupal\jsonapi_response_alter\EventSubscriber\ResponseSubscriber
+    arguments: [ '@module_handler', '@event_dispatcher' ]
+    tags:
+      - { name: event_subscriber }
+    calls:
+      - [ setRouteMatch, [ '@current_route_match' ] ]

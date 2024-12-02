@@ -1,0 +1,12 @@
+name: JSON:API Response Alter
+description: Allows altering of the JSON:API response.
+type: module
+package: Custom
+core_version_requirement: ^10.1 || ^11
+dependencies:
+  - drupal:jsonapi
+
+# Information added by Drupal.org packaging script on 2024-06-18
+version: '2.0.1'
+project: 'jsonapi_response_alter'
+datestamp: 1718696572

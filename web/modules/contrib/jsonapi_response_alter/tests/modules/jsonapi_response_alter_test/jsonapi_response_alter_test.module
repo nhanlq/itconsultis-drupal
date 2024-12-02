@@ -1,0 +1,15 @@
+<?php
+
+/**
+ * @file
+ * Jsonapi_response_alter_test module file.
+ */
+
+use Symfony\Component\HttpFoundation\Response;
+
+/**
+ * Implements hook_jsonapi_response_alter().
+ */
+function jsonapi_response_alter_test_jsonapi_response_alter(array &$jsonapi_response, Response $response) {
+  $jsonapi_response['jsonapi_response_alter_test_by_hook_jsonapi_response_alter'] = TRUE;
+}

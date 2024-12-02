@@ -1,0 +1,5 @@
+services:
+  jsonapi_response_alter_test.event_subscriber:
+    class: Drupal\jsonapi_response_alter_test\EventSubscriber
+    tags:
+      - { name: event_subscriber }
